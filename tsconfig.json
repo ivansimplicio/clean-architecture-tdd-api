@@ -13,7 +13,8 @@
     "skipLibCheck": true,
     "incremental": true,
     "outDir": "./dist",
-    "rootDirs": ["src"],"baseUrl": ".",
+    "rootDirs": ["src", "tests"],
+    "baseUrl": ".",
     "paths": {
       "@data/*": ["./src/data/*"],
       "@domain/*": ["./src/domain/*"],
@@ -26,11 +27,13 @@
       "./node_modules/@types"
     ],
     "types": [
-      "node"
+      "node",
+      "jest"
     ]
   },
   "include": [
     "src/**/*.ts",
+    "tests/**/*.ts",
     "*.ts"
   ],
   "exclude": [
