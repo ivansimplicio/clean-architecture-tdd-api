@@ -13,7 +13,15 @@
     "skipLibCheck": true,
     "incremental": true,
     "outDir": "./dist",
-    "rootDirs": ["src"],
+    "rootDirs": ["src"],"baseUrl": ".",
+    "paths": {
+      "@data/*": ["./src/data/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@main/*": ["./src/main/*"],
+      "@presentation/*": ["./src/presentation/*"],
+      "@validation/*": ["./src/validation/*"],
+    },
     "typeRoots": [
       "./node_modules/@types"
     ],
