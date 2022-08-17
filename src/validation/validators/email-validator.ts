@@ -1,4 +1,4 @@
-import { InvalidCpfError } from '@validation/errors';
+import { InvalidEmailError } from '@validation/errors';
 import { Validation } from '@presentation/interfaces';
 
 import validator from 'validator';
@@ -9,7 +9,7 @@ export class EmailValidator implements Validation {
       const isValid =
         typeof input.email === 'string' && validator.isEmail(input.email);
       if (!isValid) {
-        throw new InvalidCpfError();
+        throw new InvalidEmailError();
       }
     }
   }
